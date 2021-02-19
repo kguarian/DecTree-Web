@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha3840JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9Uj0Z" crossorigin="anonymous">
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <div class="container">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>Copyright &copy; 2020 - @ViewData["Title"]</p>
+        </footer>
+    </div>
+    <!-- Javascript to enable features like carousel -->
+    <!-- JQuery first, then popper.js, then Bootstrap JS -->
+
+    <script src="https://jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH01sSSs5nCTpuj/zy4C+OGpamoFVy38MVBnEIbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudfare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-uO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1c1HTMGa3JDZwrnQq4F86diIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    @RenderSection("Scripts", required: false)
+
+</body>
+
+</html>

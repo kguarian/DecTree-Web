@@ -1,0 +1,27 @@
+@page
+@model NorthwindWeb.Pages.IndexModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<div class="jumbotron">
+    <h1 class="display-3">DecTree Storage Demo!</h1>
+    <p class="lead">Type some text into the textbox, and it's timestamped and returned!</p>
+    <hr />
+    <p>Server Time: @Model.DayName.</p>
+    <p>
+        <a class="btn btn-primary" href="https://github.com/uTwitch1001/DecTree">Github Link</a>
+    </p>
+</div>
+<div class="row">
+    <h1 class="font-weight-light">Here is where we test the DecTree's category addressing system:</h1>
+    <form method="POST">
+        <div>
+            <p><br></p>
+            <span>Address:</span>
+            <input asp-for="subject_Address" />
+            <span>@("\tElement:")</span>
+            <input asp-for="subject_Element" />
+            <p><br></p>
+        </div>
+        <input type="submit">
+    </form>
+    <p style="white-space: pre-line">@Model.output</p>
+</div>

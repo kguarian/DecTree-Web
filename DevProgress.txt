@@ -1,0 +1,6 @@
+12/4:
+Make first website
+12/5:
+Tailor website to DecTree, use DecTree as database
+12/6:
+Create Account Class. Plan: {Allow creation of Accounts from site (username, password). Store Account with username and (password hashed by some features of username (using username[0] for now)). Store, and implement return of useful account info to website (NOT INCLUDING USERNAME AND PASSWORD INFO). Maybe a message or list of notes or something.}
